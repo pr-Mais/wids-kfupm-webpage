@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Dr. Sarah Alabdulqader",
+    "title": "AI Researcher",
+    "company": "SDAIA",
+    "linkedin": "https://linkedin.com/in/sarah-ai",
+    "topic": "Ethical AI in Healthcare"
+  },
+  {
+    "name": "Prof. Ahmed Alghamdi",
+    "title": "Data Science Professor",
+    "company": "KFUPM",
+    "linkedin": "https://linkedin.com/in/ahmed-ds",
+    "topic": "Big Data Challenges in Energy Sector"
+  }
+]

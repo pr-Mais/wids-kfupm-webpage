@@ -1,103 +1,86 @@
-import Image from "next/image";
+import Image from 'next/image';
 
+import Hero from '@/components/Hero';
+import { About } from '@/components/sections/About';
+import { Organizer, Organizers } from '@/components/sections/Organizers';
+import { Schedule, ScheduleItem } from '@/components/sections/Schedule';
+import { Speakers } from '@/components/sections/Speakers';
+import { Team } from '@/components/sections/Team';
+import { WhyJoin } from '@/components/sections/WhyJoin';
+import { Workshops } from '@/components/sections/Workshops';
+
+import teamMembers from '@/data/team.json';
+import speakers from '@/data/speakers.json';
+import scheduleData from '@/data/schedule.json';
+import organizers from '@/data/organizers.json';
+import foundingTeamMembers from '@/data/founding-team.json';
+import { ContactSection } from '@/components/sections/Contact';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+
+const workshops = [
+  {
+    title:
+      'Computer Vision As a Service: Dataset Annotation and Model Building',
+    speaker: 'Join Justine Braggy, CEO of Thya Technology',
+    description:
+      'Learn to generate your own specific AI-driven detection model to answer scientific questions. Bring your own image dataset to build a personalized detection model.',
+    ctaLink: '/workshops/computer-vision',
+  },
+  {
+    title:
+      'UX in Data Science: Improving the User Experience with Data-Driven Insights',
+    speaker: 'Join Maha AlGhamdi, a software engineer at Aramco',
+    description:
+      'Learn the basics of UX and how to improve products with data-driven insights. The session will close with a case study that used data to enhance user experience.',
+    ctaLink: '/workshops/ux-data-science',
+  },
+];
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div>
+      <Header />
+      <main>
+        <Hero
+          title="WOMEN IN DATA SCIENCE"
+          subtitle="DHAHRAN @ KFUPM"
+          dateText="1, May 2025 - 08:00 (Riyadh Time)"
+          eventLocation="KFUPM, Dhahran, Saudi Arabia"
+          buttonText="JOIN NOW"
+          targetDate="2025-05-01T08:00:00+03:00" // Riyadh time (UTC+3)
+          logo={
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/wids-white.png"
+              alt="KFUPM Logo"
+              width={400}
+              height={80}
+              className="mb-8 mx-auto"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          }
+        />
+        <About
+          title="About WiDS Dhahran"
+          imageSrc="/about.jpeg"
+          imageAlt="Women in Data Science conference"
+          paragraphs={[
+            'King Fahad University of Petroleum and Minerals is pleased to host Stanford Global Women in Data Science conference for the forth time in the Eastern region of Saudi Arabia.',
+            'WiDS at KFUPM workshop is an independent event that is organized by the WiDS@Dhahran team led by Ambassadors, Mrs. Asma Yamani and Raghad Alzahrani, as part of the annual WiDS Worldwide conference organized by Stanford University and an estimated 200+ locations worldwide, which features outstanding women doing outstanding work in the field of data science. All genders are invited to attend all WiDS Worldwide conference events',
+            'The forth annual WiDS @ Dhahran - KFUPM event will take place on May 4, 2023 in a hybrid format at KFUPM.This event will feature several professional and student female speakers.',
+          ]}
+        />
+        <Workshops workshops={workshops} />
+        <Speakers title="Speakers" speakers={speakers} />
+        <Team title="WiDS-Dhahran @KFUPM 2024 Team" members={teamMembers} />
+        <Team
+          title="WiDS-Dhahran @KFUPM Founding Team"
+          members={foundingTeamMembers}
+        />
+        <Schedule sessions={scheduleData as ScheduleItem[]} />
+        <WhyJoin />
+        <Organizers organizers={organizers as Organizer[]} />
+        <ContactSection />
+        <Footer />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
