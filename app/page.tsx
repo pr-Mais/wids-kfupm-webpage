@@ -50,7 +50,7 @@ export default function Home() {
           targetDate="2025-05-01T08:00:00+03:00" // Riyadh time (UTC+3)
           logo={
             <Image
-              src="/wids-white.png"
+              src="./wids-white.png"
               alt="KFUPM Logo"
               width={400}
               height={80}
