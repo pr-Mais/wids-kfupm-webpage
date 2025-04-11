@@ -1,13 +1,13 @@
  [
     {
       "name": "JRCAI",
-      "logo": "/logos/jrcai.png",
+      "logo": "./logos/jrcai.png",
       "altText": "JRCAL Research Center Logo",
       "logoType": "light"
     },
     {
       "name": "KIKX",
-      "logo": "/logos/kikx.jpg",
+      "logo": "./logos/kikx.jpg",
       "altText": "KIKX Innovation Hub Logo",
       "logoType": "dark"
     }

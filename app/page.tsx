@@ -60,7 +60,7 @@ export default function Home() {
         />
         <About
           title="About WiDS Dhahran"
-          imageSrc="/about.jpeg"
+          imageSrc="./about.jpeg"
           imageAlt="Women in Data Science conference"
           paragraphs={[
             'King Fahad University of Petroleum and Minerals is pleased to host Stanford Global Women in Data Science conference for the forth time in the Eastern region of Saudi Arabia.',

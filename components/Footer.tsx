@@ -9,7 +9,7 @@ export const Footer = () => {
         {/* Logo in the middle */}
         <div className="mb-4">
           <Image 
-            src="/wids-white.png" 
+            src="./wids-white.png" 
             alt="WiDS Dhahran Logo"
             width={500}
             height={40}
