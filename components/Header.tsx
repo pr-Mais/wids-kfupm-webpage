@@ -1,11 +1,12 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [subMenuOpen, setSubMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -19,12 +20,23 @@ export const Header = () => {
     element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
+  const previousEvents = [
+    { id: '2023', label: '2023 Event', url: '/events/2023' },
+    { id: '2022', label: '2022 Event', url: '/events/2022' },
+    { id: '2021', label: '2021 Event', url: '/events/2021' },
+  ];
+
   const navItems = [
     { id: 'about', label: 'About' },
     { id: 'workshops', label: 'Workshops' },
     { id: 'speakers', label: 'Speakers' },
     { id: 'schedule', label: 'Schedule' },
     { id: 'contact', label: 'Contact' },
+    {
+      id: 'previous-events',
+      label: 'Previous Events',
+      submenu: true,
+    },
   ];
 
   return (
@@ -40,29 +52,70 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex justify-center">
             <div className="flex space-x-10 py-3">
-              {' '}
-              {/* Added py-3 here */}
               {navItems.map((item) => (
                 <div
                   key={item.id}
-                  onClick={() => scrollTo(item.id)}
-                  className={`text-lg font-medium cursor-pointer transition-all duration-200 transform hover:scale-110 ${
-                    isScrolled ? 'text-gray-800' : 'text-white'
-                  }`}
+                  className="relative"
+                  onMouseEnter={() => item.submenu && setSubMenuOpen(true)}
+                  onMouseLeave={() => item.submenu && setSubMenuOpen(false)}
                 >
-                  {item.label}
+                  {item.submenu ? (
+                    <>
+                      <button
+                        className={`flex items-center gap-1 text-lg font-medium transition-all duration-200 ${
+                          isScrolled
+                            ? 'text-gray-800 hover:text-gray-600'
+                            : 'text-white hover:text-gray-200'
+                        }`}
+                      >
+                        {item.label}
+                        <FiChevronDown
+                          size={18}
+                          className={`transition-transform duration-200 ${
+                            subMenuOpen ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </button>
+                      <div
+                        className={`absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-md shadow-lg bg-white transition-all duration-200 ${
+                          subMenuOpen
+                            ? 'opacity-100 visible translate-y-0'
+                            : 'opacity-0 invisible -translate-y-2'
+                        }`}
+                      >
+                        <div className="py-1">
+                          {previousEvents.map((event) => (
+                            <a
+                              key={event.id}
+                              href={event.url}
+                              className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                            >
+                              {event.label}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <div
+                      onClick={() => scrollTo(item.id)}
+                      className={`text-lg font-medium cursor-pointer transition-all duration-200 hover:scale-110 ${
+                        isScrolled ? 'text-gray-800' : 'text-white'
+                      }`}
+                    >
+                      {item.label}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
           </nav>
 
-          {/* Mobile Navigation Toggle - Removed padding from header */}
+          {/* Mobile Navigation */}
           <div className="md:hidden flex justify-end py-3">
-            {' '}
-            {/* Moved padding here */}
             <div
               onClick={() => setMobileOpen(!mobileOpen)}
-              className={`p-2 rounded-md cursor-pointer transition-all duration-200 transform hover:scale-110 ${
+              className={`p-2 rounded-md cursor-pointer transition-all duration-200 ${
                 isScrolled ? 'text-gray-800' : 'text-white'
               }`}
             >
@@ -72,24 +125,54 @@ export const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu - Positioned absolutely to not affect layout */}
+      {/* Mobile Menu */}
       <div
         className={`fixed inset-0 w-full h-full bg-white z-40 transition-all duration-300 ease-in-out ${
           mobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
-        style={{ marginTop: '0' }} // Ensure no offset
       >
         <div className="container mx-auto px-6 pt-24">
-          {' '}
-          {/* Padding only inside */}
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-4">
             {navItems.map((item) => (
-              <div
-                key={item.id}
-                onClick={() => scrollTo(item.id)}
-                className="text-2xl font-medium text-gray-800 cursor-pointer py-3 transition-all duration-200 transform hover:scale-105"
-              >
-                {item.label}
+              <div key={item.id}>
+                {item.submenu ? (
+                  <>
+                    <button
+                      onClick={() => setSubMenuOpen(!subMenuOpen)}
+                      className="flex items-center justify-between w-full text-2xl font-medium text-gray-800 py-3"
+                    >
+                      {item.label}
+                      <FiChevronDown
+                        size={24}
+                        className={`transition-transform duration-200 ${
+                          subMenuOpen ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </button>
+                    <div
+                      className={`pl-4 overflow-hidden transition-all duration-300 ${
+                        subMenuOpen ? 'max-h-96' : 'max-h-0'
+                      }`}
+                    >
+                      {previousEvents.map((event) => (
+                        <a
+                          key={event.id}
+                          href={event.url}
+                          className="block py-2 text-xl text-gray-600 hover:text-gray-900"
+                        >
+                          {event.label}
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <div
+                    onClick={() => scrollTo(item.id)}
+                    className="text-2xl font-medium text-gray-800 cursor-pointer py-3"
+                  >
+                    {item.label}
+                  </div>
+                )}
               </div>
             ))}
           </div>

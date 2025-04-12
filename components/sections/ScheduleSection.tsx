@@ -7,6 +7,7 @@ export interface ScheduleItem {
   title: string;
   speaker?: string;
   session: 'opening' | 'session1' | 'session2' | 'session3' | 'parallel';
+  type: 'session' | 'break';
 }
 
 interface ScheduleProps {
@@ -113,24 +114,54 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
           {filteredSessions.map((session, index) => (
             <div
               key={index}
-              className="p-3 rounded-lg border-l-4 border-emerald-500 bg-white shadow-sm hover:shadow-md transition-shadow"
+              className={`p-4 rounded-lg transition-all duration-200 ${
+                session.type === 'break'
+                  ? 'bg-amber-50 hover:bg-amber-100'
+                  : 'bg-white hover:bg-emerald-50'
+              } relative`}
             >
-              {/* Mobile: Stacked layout */}
-              <div className="flex flex-col sm:flex-row gap-2">
-                {/* Time chip - full width on mobile, auto width on desktop */}
-                <div className="w-full sm:w-auto">
-                  <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
-                    {session.time}
-                  </span>
+              {/* Vertical line separator */}
+              <div
+                className={`absolute left-0 top-0 bottom-0 w-2 rounded-l-lg  ${
+                  session.type === 'break' ? 'bg-amber-300' : 'bg-emerald-300'
+                }`}
+              ></div>
+
+              <div className="flex flex-col sm:flex-row gap-4 pl-5">
+                {/* Clean, readable time display */}
+                <div
+                  className={`w-full sm:w-24 flex-shrink-0 ${
+                    session.type === 'break'
+                      ? 'text-amber-700'
+                      : 'text-emerald-700'
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="text-base font-bold tracking-tight">
+                      {session.time}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Session info - takes remaining space on desktop */}
+                {/* Session info */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base font-semibold text-gray-800">
+                  <h3
+                    className={`text-base font-bold ${
+                      session.type === 'break'
+                        ? 'text-amber-900'
+                        : 'text-gray-900'
+                    }`}
+                  >
                     {session.title}
                   </h3>
                   {session.speaker && (
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p
+                      className={`text-sm ${
+                        session.type === 'break'
+                          ? 'text-amber-700'
+                          : 'text-gray-600'
+                      } mt-1`}
+                    >
                       {session.speaker}
                     </p>
                   )}

@@ -20,76 +20,96 @@
     "time": "09:30 - 10:00 AM",
     "title": "Keynote 2: Explainable AI in Petroleum Engineering",
     "session": "session1",
-    "speaker": "Eng. Nourah Almulla"
+    "speaker": "Eng. Nourah Almulla",
+    "type": "session"
   },
   {
     "time": "10:00 - 10:10 AM",
     "title": "Flash talk: AI for smoke point prediction",
     "session": "session1",
-    "speaker": "Ms. Ruaa Abakar"
+    "speaker": "Ms. Ruaa Abakar",
+    "type": "session"
   },
   {
     "time": "10:10 - 10:30 AM",
     "title": "Coffee break",
-    "session": "session1"
+    "session": "session1",
+    "type": "break"
   },
   {
     "time": "10:30 - 11:15 AM",
     "title": "Keynote 3: Responsible AI for science and medicine",
     "session": "session2",
-    "speaker": "Dr. Batool Almarzouq"
+    "speaker": "Dr. Batool Almarzouq",
+    "type": "session"
   },
   {
     "time": "11:15 - 11:45 AM",
     "title": "Keynote 4: AI for Diabetic Retinopathy",
     "session": "session2",
-    "speaker": "Dr. Wadha Almattar"
+    "speaker": "Dr. Wadha Almattar",
+    "type": "session"
   },
   {
     "time": "11:45 - 11:55 AM",
     "title": "Flash Talk: Predicting Dunham Texture and Depositional Facies of Carbonate Reservoirs from Thin Sections",
     "session": "session2",
-    "speaker": "Dr. Xin liu"
+    "speaker": "Dr. Xin liu",
+    "type": "session"
   },
   {
     "time": "12:00 - 01:00 PM",
     "title": "Lunch break, Poster session",
-    "session": "session2"
+    "session": "session2",
+    "type": "break"
   },
   {
     "time": "01:10 - 01:40 PM",
     "title": "Keynote: Computer Vision Applications in Science and Engineering",
     "session": "session3",
-    "speaker": "Dr. Justine Braguy"
+    "speaker": "Dr. Justine Braguy",
+    "type": "session"
   },
   {
     "time": "01:40 - 01:50 PM",
     "title": "Flash Talk: Underwater Image Enhancement",
     "session": "session3",
-    "speaker": "Ms. Afrah Shaahid"
+    "speaker": "Ms. Afrah Shaahid",
+    "type": "session"
   },
   {
     "time": "01:50 - 02:00 PM",
     "title": "Flash Talk: Smart air pollution mapping",
     "session": "session3",
-    "speaker": "Ms. Eman Mahmoud"
+    "speaker": "Ms. Eman Mahmoud",
+    "type": "session"
   },
   {
     "time": "02:00 - 02:40 PM",
     "title": "Panel discussion: AI in Engineering and Science: Ann industry prospective",
     "session": "session3",
-    "speaker": "Reema Alsaif • Itsikiantsoa Randrianantenaina • Aeshah Almutairy • Ghiada Altasan"
+    "speaker": "Reema Alsaif • Itsikiantsoa Randrianantenaina • Aeshah Almutairy • Ghiada Altasan",
+    "type": "session"
+  },
+  {
+    "time": "02:40 - 03:00 PM",
+    "title": "Closing and award announcement",
+    "session": "session3",
+    "speaker": "Asma Yamani",
+    "type": "session"
   },
   {
     "time": "03:00 - 04:30 PM",
     "title": "Workshop 1",
     "session": "parallel",
-    "speaker": ""
+    "speaker": "",
+    "type": "session"
   },
   {
     "time": "03:00 - 04:30 PM",
     "title": "Workshop 2",
     "session": "parallel",
-    "speaker": ""
+    "speaker": "",
+    "type": "session"
   }
 ]
