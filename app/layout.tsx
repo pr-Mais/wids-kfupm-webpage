@@ -16,13 +16,17 @@ export const metadata: Metadata = {
   title: 'WiDS Dhahran @ KFUPM',
   description:
     'Join us for the WiDS Dhahran @ KFUPM event, a global conference featuring inspiring talks and workshops in data science and AI.',
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || 'https://wids-dhahran.kfupm.edu.sa'
+  ),
   openGraph: {
-    images: [{ url: './og-image.png' }],
+    images: [{ url: '/og-image.png' }],
     type: 'website',
+    url: '/',
   },
   twitter: {
     card: 'summary_large_image',
-    images: [{ url: './og-image.png' }],
+    images: [{ url: '/og-image.png' }],
   },
 };
 
