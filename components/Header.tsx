@@ -119,7 +119,11 @@ export const Header = () => {
                 isScrolled ? 'text-gray-800' : 'text-white'
               }`}
             >
-              {mobileOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+              {mobileOpen ? (
+                <FiX size={28} color="black" />
+              ) : (
+                <FiMenu size={28} />
+              )}
             </div>
           </div>
         </div>
