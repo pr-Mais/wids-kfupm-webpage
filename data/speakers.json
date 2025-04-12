@@ -3,6 +3,7 @@
     "name": "Dr. Abdullah Sultan",
     "title": "Dean",
     "company": "KFUPM",
+    "linkedin": "",
     "topic": "Opening"
   },
   {
@@ -21,11 +22,14 @@
   },
   {
     "name": "Ms. Ruaa Abakar",
+    "title": "",
+    "company": "",
     "linkedin": "",
     "topic": "Flash talk: AI for smoke point prediction"
   },
   {
     "name": "Dr. Batool Almarzouq",
+    "title": "",
     "company": "Allan Turing Institute",
     "linkedin": "",
     "topic": "Keynote 3: Responsible AI for science and medicine"
