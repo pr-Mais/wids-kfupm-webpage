@@ -2,14 +2,14 @@ import {
   FaGlobe,
   FaUsers,
   FaLightbulb,
-  FaUserTie,
+  FaUser,
   FaLaughSquint,
 } from 'react-icons/fa';
-import { FaMicroscope } from 'react-icons/fa6';
+import { FaMicroblog } from 'react-icons/fa6';
 
 const benefits = [
   {
-    icon: <FaMicroscope className="text-2xl text-emerald-600" />,
+    icon: <FaMicroblog className="text-2xl text-emerald-600" />,
     title: 'Great Speakers',
     description:
       'Learn about prominent research endeavors conducted by renowned female data scientists.',
@@ -35,7 +35,7 @@ const benefits = [
     number: '04',
   },
   {
-    icon: <FaUserTie className="text-2xl text-emerald-600" />,
+    icon: <FaUser className="text-2xl text-emerald-600" />,
     title: 'Personal Development',
     description: 'Sharpen your communication and critical thinking skills.',
     number: '05',

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "ICS",
+    "logo": "./logos/ics.png",
+    "altText": "Department of Information and Computer Science Logo",
+    "logoType": "dark"
+  },
+  {
+    "name": "KIKX",
+    "logo": "./logos/kikx.jpg",
+    "altText": "KIKX Innovation Hub Logo",
+    "logoType": "dark"
+  }
+]

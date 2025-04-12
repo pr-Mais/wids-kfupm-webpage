@@ -1,33 +1,26 @@
 'use client';
 
+import { Workshop } from '@/interfaces/Workshop';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-interface Workshop {
-  title: string;
-  speaker: string;
-  description: string;
-  ctaLink: string;
-}
-
 interface WorkshopsProps {
+  sectionTitle: string;
   workshops: Workshop[];
 }
 
-export const Workshops = ({ workshops }: WorkshopsProps) => {
+export const Workshops = ({ sectionTitle, workshops }: WorkshopsProps) => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = 'WiDS-Dhahran @KFUPM Workshops';
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     let i = 0;
     const typingEffect = setInterval(() => {
-      if (i < fullText.length) {
-        setDisplayText(fullText.substring(0, i + 1));
+      if (i < sectionTitle.length) {
+        setDisplayText(sectionTitle.substring(0, i + 1));
         i++;
       } else {
         clearInterval(typingEffect);
-        // Blinking cursor effect
         setInterval(() => setShowCursor((prev) => !prev), 500);
       }
     }, 100);

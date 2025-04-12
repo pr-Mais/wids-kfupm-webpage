@@ -1,16 +1,117 @@
 [
   {
-    "name": "Dr. Sarah Alabdulqader",
-    "title": "AI Researcher",
-    "company": "SDAIA",
-    "linkedin": "https://linkedin.com/in/sarah-ai",
-    "topic": "Ethical AI in Healthcare"
+    "name": "Dr. Abdullah Sultan",
+    "title": "Dean",
+    "company": "KFUPM",
+    "topic": "Opening"
   },
   {
-    "name": "Prof. Ahmed Alghamdi",
+    "name": "Dr. Fatima Abu Salam",
     "title": "Data Science Professor",
+    "company": "American University of Beirut",
+    "linkedin": "",
+    "topic": "Keynote 1: Safe, explainable, fair, and ethical decisions: insights from trustworthy ML"
+  },
+  {
+    "name": "Eng. Nourah Almulla",
+    "title": "",
+    "company": "Saudi Aramco",
+    "linkedin": "",
+    "topic": "Keynote 2: Explainable AI in Petroleum Engineering"
+  },
+  {
+    "name": "Ms. Ruaa Abakar",
+    "linkedin": "",
+    "topic": "Flash talk: AI for smoke point prediction"
+  },
+  {
+    "name": "Dr. Batool Almarzouq",
+    "company": "Allan Turing Institute",
+    "linkedin": "",
+    "topic": "Keynote 3: Responsible AI for science and medicine"
+  },
+  {
+    "name": "Dr. Wadha Almattar",
+    "title": "",
+    "company": "Imam Abdulrahman University",
+    "linkedin": "",
+    "topic": "Keynote 4: AI for Diabetic Retinopathy"
+  },
+  {
+    "name": "Dr. Xin liu",
+    "title": "Flash Talk: Predicting Dunham Texture and Depositional Facies of Carbonate Reservoirs from Thin Sections",
     "company": "KFUPM",
-    "linkedin": "https://linkedin.com/in/ahmed-ds",
-    "topic": "Big Data Challenges in Energy Sector"
+    "linkedin": "",
+    "topic": ""
+  },
+  {
+    "name": "Dr. Justine Braguy",
+    "title": "",
+    "company": "Thya Technology",
+    "linkedin": "",
+    "topic": "Keynote: Computer Vision Applications in Science and Engineering"
+  },
+  {
+    "name": "Ms. Afrah Shaahid",
+    "title": "",
+    "company": "KFUPM",
+    "linkedin": "",
+    "topic": "Flash Talk: Underwater Image Enhancement"
+  },
+  {
+    "name": "Ms. Eman Mahmoud",
+    "title": "Flash Talk: Smart air pollution mapping",
+    "company": "KFUPM",
+    "linkedin": "",
+    "topic": ""
+  },
+  {
+    "name": "Reema Alsaif",
+    "title": "",
+    "company": "Saudi Aramco",
+    "linkedin": "",
+    "topic": "Panel discussion: AI in Engineering and Science: Ann industry prospective"
+  },
+  {
+    "name": "Itsikiantsoa Randrianantenaina",
+    "title": "",
+    "company": "NEOM",
+    "linkedin": "",
+    "topic": "Panel discussion: AI in Engineering and Science: Ann industry prospective"
+  },
+  {
+    "name": "Aeshah Almutairy",
+    "title": "",
+    "company": "NTDP",
+    "linkedin": "",
+    "topic": "Panel discussion: AI in Engineering and Science: Ann industry prospective"
+  },
+  {
+    "name": "Ghiada Altasan",
+    "title": "",
+    "company": "PIF",
+    "linkedin": "",
+    "topic": "Panel discussion: AI in Engineering and Science: Ann industry prospective"
+  },
+  {
+    "name": "Asma Yamani",
+    "title": "",
+    "company": "KFUPM",
+    "linkedin": "",
+    "topic": "Closing and award announcement"
+  },
+  {
+    "name": "",
+    "title": "",
+    "company": "",
+    "linkedin": "",
+    "topic": "Workshop 1"
+  },
+  {
+    "name": "",
+    "title": "",
+    "company": "",
+    "linkedin": "",
+    "topic": "Workshop 2"
   }
 ]

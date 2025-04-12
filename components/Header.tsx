@@ -16,7 +16,7 @@ export const Header = () => {
   const scrollTo = (id: string) => {
     setMobileOpen(false);
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const navItems = [
@@ -29,14 +29,19 @@ export const Header = () => {
 
   return (
     <>
-      <header className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm py-3' : 'bg-transparent py-4'
-      }`}
+      <header
+        className={`fixed w-full z-50 transition-all duration-300 ${
+          isScrolled
+            ? 'bg-white/90 backdrop-blur-sm shadow-sm'
+            : 'bg-transparent'
+        }`}
       >
         <div className="container mx-auto px-6">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex justify-center">
-            <div className="flex space-x-10">
+            <div className="flex space-x-10 py-3">
+              {' '}
+              {/* Added py-3 here */}
               {navItems.map((item) => (
                 <div
                   key={item.id}
@@ -51,9 +56,11 @@ export const Header = () => {
             </div>
           </nav>
 
-          {/* Mobile Navigation Toggle */}
-          <div className="md:hidden flex justify-end">
-            <div 
+          {/* Mobile Navigation Toggle - Removed padding from header */}
+          <div className="md:hidden flex justify-end py-3">
+            {' '}
+            {/* Moved padding here */}
+            <div
               onClick={() => setMobileOpen(!mobileOpen)}
               className={`p-2 rounded-md cursor-pointer transition-all duration-200 transform hover:scale-110 ${
                 isScrolled ? 'text-gray-800' : 'text-white'
@@ -65,12 +72,16 @@ export const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu */}
-      <div className={`fixed top-0 left-0 w-full h-full bg-white z-40 pt-24 transition-all duration-300 ease-in-out ${
-        mobileOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
-      }`}
+      {/* Mobile Menu - Positioned absolutely to not affect layout */}
+      <div
+        className={`fixed inset-0 w-full h-full bg-white z-40 transition-all duration-300 ease-in-out ${
+          mobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        style={{ marginTop: '0' }} // Ensure no offset
       >
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 pt-24">
+          {' '}
+          {/* Padding only inside */}
           <div className="flex flex-col space-y-6">
             {navItems.map((item) => (
               <div

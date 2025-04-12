@@ -8,16 +8,16 @@ interface TeamMember {
 }
 
 interface TeamProps {
-  title: string;
+  sectionTitle: string;
   members: TeamMember[];
 }
 
-export const Team = ({ members, title }: TeamProps) => {
+export const TeamSection = ({ members, sectionTitle: title }: TeamProps) => {
   return (
-    <section className="py-10 px-4 bg-gray-100 text-gray-800">
+    <section className="py-10 px-4 text-gray-800">
       <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-1">
-      {title}
+        <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-1">
+          {title}
         </h2>
         <div className="h-1 w-16 bg-emerald-600 mb-8"></div>
 
@@ -25,7 +25,7 @@ export const Team = ({ members, title }: TeamProps) => {
           {members.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white rounded-md overflow-hidden border border-gray-200 hover:border-emerald-300 transition-all"
             >
               <div className="relative h-36 bg-gradient-to-br from-emerald-400 to-green-500 flex items-center justify-center">
                 {member.image ? (

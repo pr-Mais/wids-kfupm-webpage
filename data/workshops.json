@@ -1,0 +1,18 @@
+[
+  {
+    "title":
+      "Computer Vision As a Service: Dataset Annotation and Model Building",
+    "speaker": "Join Justine Braggy, CEO of Thya Technology",
+    "description":
+      "Learn to generate your own specific AI-driven detection model to answer scientific questions. Bring your own image dataset to build a personalized detection model.",
+    "ctaLink": "/workshops/computer-vision"
+  },
+  {
+    "title":
+      "UX in Data Science: Improving the User Experience with Data-Driven Insights",
+    "speaker": "Join Maha AlGhamdi, a software engineer at Aramco",
+    "description":
+      "Learn the basics of UX and how to improve products with data-driven insights. The session will close with a case study that used data to enhance user experience.",
+    "ctaLink": "/workshops/ux-data-science"
+  }
+]

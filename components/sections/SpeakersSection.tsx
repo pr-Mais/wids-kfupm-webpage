@@ -12,12 +12,12 @@ interface Speaker {
 
 interface SpeakersProps {
   speakers: Speaker[];
-  title?: string;
+  sectionTitle?: string;
 }
 
 export const Speakers = ({
   speakers,
-  title = 'Featured Speakers',
+  sectionTitle: title = 'Featured Speakers',
 }: SpeakersProps) => {
   const getInitials = (name: string) => {
     const ignoreTitles = ['Dr', 'Prof', 'Mr', 'Mrs', 'Ms', 'PhD'];
