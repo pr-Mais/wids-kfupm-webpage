@@ -21,9 +21,9 @@ export const Header = () => {
   };
 
   const previousEvents = [
-    { id: '2023', label: '2023 Event', url: '/events/2023' },
-    { id: '2022', label: '2022 Event', url: '/events/2022' },
-    { id: '2021', label: '2021 Event', url: '/events/2021' },
+    { id: '2023', label: '2023 Event', url: '/old_events/2023/index.html' },
+    { id: '2022', label: '2022 Event', url: '/old_events/2022/index.html' },
+    { id: '2021', label: '2021 Event', url: '/old_events/2021/index.html' },
   ];
 
   const navItems = [
