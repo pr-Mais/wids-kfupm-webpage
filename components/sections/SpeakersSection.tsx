@@ -37,7 +37,7 @@ export const Speakers = ({
         </h2>
         <div className="h-1 w-12 bg-emerald-600 mb-6"></div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-5 gap-4">
           {speakers.map((speaker, index) => (
             <div
               key={index}
@@ -66,7 +66,10 @@ export const Speakers = ({
                       {speaker.name}
                     </h3>
                     <p className="text-xs text-emerald-600 line-clamp-1">
-                      {speaker.title} · {speaker.company}
+                      {speaker.title}
+                    </p>
+                    <p className="text-xs text-gray-500 line-clamp-1">
+                      {speaker.company}
                     </p>
                   </div>
                   <a

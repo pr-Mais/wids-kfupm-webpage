@@ -1,47 +1,85 @@
 [
   {
-    "name": "ASMA YAMANI",
-    "role": "WiDS Ambassador",
-    "affiliation": "PhD candidate KFUPM"
+    "name": "Dr. Motaz Alfarraj",
+    "role": "Chairman of ICS",
+    "affiliation": "KFUPM",
+    "linkedin": "https://www.linkedin.com/in/motazalfarraj/",
+    "image": "./photos/motaz_alfarraj.jpeg"
   },
   {
-    "name": "RAGHAD ALZAHRANI",
-    "role": "Co-Ambassador",
-    "affiliation": "MASTER STUDENT KFUPM"
+    "name": "Asma Yamani",
+    "role": "WiDS ambassador",
+    "affiliation": "PhD candidate, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/asma-yamani-b2418981/"
   },
   {
-    "name": "MOTAZ ALFARRAJ",
-    "role": "Director",
-    "affiliation": "SDAIA-KFUPM JRCAI"
+    "name": "Aisha Alansari",
+    "role": "WiDS co-ambassador",
+    "affiliation": "Graduate Assistant, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/aisha-alansari-728079205/"
   },
   {
-    "name": "SHARIFAH ALMARHOUN",
-    "role": "Administrative assistant",
-    "affiliation": "SDAIA-KFUPM JRCAI"
+    "name": "Dr. Shaikhah Laradhi",
+    "role": "WiDS co-ambassador",
+    "affiliation": "Research Scientist, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/sheikha-lardhi/",
+    "image": "./photos/shaikhah_laradhi.png"
   },
   {
-    "name": "NORA ALTURAYEIF",
-    "role": "PhD candidate",
-    "affiliation": "KFUPM"
+    "name": "Rahaf Jaber",
+    "role": "WiDS datathon mentor",
+    "affiliation": "Masters Student, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/rahaf-fathi-jaber/",
+    "image": "./photos/rahaf_jaber.png"
   },
   {
-    "name": "SALMA ALBELALI",
-    "role": "PhD candidate",
-    "affiliation": "KFUPM"
+    "name": "Yasmin Yasin",
+    "role": "WiDS datathon mentor",
+    "affiliation": "Masters Student, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/yasmin-yasin/"
   },
   {
-    "name": "WADHA ALMATAR",
-    "role": "PhD candidate",
-    "affiliation": "KFUPM"
+    "name": "Linah Abou-Hajar",
+    "role": "Team Member",
+    "affiliation": "PhD candidate, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/linah-abou-hajar-4380b3131/"
   },
   {
-    "name": "DINA ALHAMED",
-    "role": "AI Developer",
-    "affiliation": "SDAIA-KFUPM JRCAI"
+    "name": "Mais Alheraki",
+    "role": "Team Member",
+    "affiliation": "PhD student, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/maisalheraki/",
+    "image": "./photos/mais_alheraki.jpg"
   },
   {
-    "name": "RUBA ALZAHRANI",
-    "role": "Graphic Designer",
-    "affiliation": ""
+    "name": "Thuraya Alzubaidi",
+    "role": "Team Member",
+    "affiliation": "",
+    "linkedin": "https://www.linkedin.com/in/thuraya-tariq-6469ba177/"
+  },
+  {
+    "name": "Zeina Alabido",
+    "role": "Team Member",
+    "affiliation": "Masters student, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/zeina-alabido-8401b91ab/"
+  },
+  {
+    "name": "Khawlah Dehwah",
+    "role": "Team Member",
+    "affiliation": "PhD student, KFUPM",
+    "linkedin": ""
+  },
+  {
+    "name": "Hanadi Ali",
+    "role": "Team Member",
+    "affiliation": "Master student, KFUPM",
+    "linkedin": "https://www.linkedin.com/in/hanadi-ali-371b57337/"
+  },
+  {
+    "name": "Reema Alsuwailem",
+    "role": "Team Member",
+    "affiliation": "Saudi Aramco",
+    "linkedin": "https://www.linkedin.com/in/reema-m-alsuwailem-b47213187/",
+    "image": "./photos/reema_alsuwailem.jpeg"
   }
 ]

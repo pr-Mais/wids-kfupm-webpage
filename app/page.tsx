@@ -56,6 +56,7 @@ export default function Home() {
           sectionTitle="WiDS-Dhahran @KFUPM Workshops"
           workshops={workshops}
         />
+        <Schedule sessions={scheduleData as ScheduleItem[]} />
         <Speakers sectionTitle="Speakers" speakers={speakers} />
         <TeamSection
           sectionTitle="WiDS-Dhahran @KFUPM 2024 Team"
@@ -65,7 +66,6 @@ export default function Home() {
           sectionTitle="WiDS-Dhahran @KFUPM Founding Team"
           members={foundingTeamMembers}
         />
-        <Schedule sessions={scheduleData as ScheduleItem[]} />
         <WhyJoin />
         <PartnersSection organizers={partners as Partner[]} />
         <ContactSection />

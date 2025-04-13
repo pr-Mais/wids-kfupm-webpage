@@ -1,10 +1,13 @@
 import Image from 'next/image';
+import { FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 interface TeamMember {
   name: string;
   role: string;
   affiliation: string;
   image?: string;
+  linkedin?: string;
+  twitter?: string;
 }
 
 interface TeamProps {
@@ -21,7 +24,7 @@ export const TeamSection = ({ members, sectionTitle: title }: TeamProps) => {
         </h2>
         <div className="h-1 w-16 bg-emerald-600 mb-8"></div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
           {members.map((member, index) => (
             <div
               key={index}
@@ -45,14 +48,40 @@ export const TeamSection = ({ members, sectionTitle: title }: TeamProps) => {
                 )}
               </div>
 
-              <div className="p-3 text-center">
+              <div className="p-2 text-center">
                 <h3 className="text-sm font-bold text-gray-900 mb-0.5">
                   {member.name}
                 </h3>
                 <p className="text-xs text-emerald-600 font-medium">
                   {member.role}
                 </p>
-                <p className="text-xs text-gray-500">{member.affiliation}</p>
+                {member.affiliation.length == 0 ? (
+                  <p className="text-xs text-gray-500 h-4">{}</p>
+                ) : (
+                  <p className="text-xs text-gray-500">{member.affiliation}</p>
+                )}
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${member.name}'s LinkedIn`}
+                  className="text-gray-400 hover:text-emerald-600 transition-colors flex items-center justify-center pb-2"
+                >
+                  <FaLinkedin className="text-base" />
+                </a>
+                {member.twitter && (
+                  <a
+                    href={member.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${member.name}'s X Account`}
+                    className="text-gray-400 hover:text-emerald-600 transition-colors flex items-center justify-center pb-2"
+                  >
+                    <FaXTwitter className="text-base" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
