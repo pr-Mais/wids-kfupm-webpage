@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
-interface TeamMember {
+export interface TeamMember {
   name: string;
-  role: string;
+  role?: string;
   affiliation: string;
   image?: string;
   linkedin?: string;

@@ -6,7 +6,7 @@ import { Header } from '@/components/Header';
 import { Partner } from '@/interfaces/Partner';
 import { About } from '@/components/sections/AboutSection';
 import { WhyJoin } from '@/components/sections/WhyJoinSection';
-import { TeamSection } from '@/components/sections/TeamSection';
+import { TeamMember, TeamSection } from '@/components/sections/TeamSection';
 import { Speakers } from '@/components/sections/SpeakersSection';
 import { Workshops } from '@/components/sections/WorkshopsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
@@ -50,12 +50,12 @@ export default function Home() {
         <Schedule sessions={scheduleData as ScheduleItem[]} />
         <Speakers sectionTitle="Speakers" speakers={speakers} />
         <TeamSection
-          sectionTitle="WiDS-Dhahran @KFUPM 2024 Team"
+          sectionTitle="WiDS-Dhahran @KFUPM 2025 Team"
           members={teamMembers}
         />
         <TeamSection
           sectionTitle="WiDS-Dhahran @KFUPM Founding Team"
-          members={foundingTeamMembers}
+          members={foundingTeamMembers as TeamMember[]}
         />
         <WhyJoin />
         <PartnersSection organizers={partners as Partner[]} />
