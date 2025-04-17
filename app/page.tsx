@@ -38,9 +38,9 @@ export default function Home() {
           imageSrc="./about.jpeg"
           imageAlt="Women in Data Science conference"
           paragraphs={[
-            'King Fahad University of Petroleum and Minerals is pleased to host Stanford Global Women in Data Science conference for the forth time in the Eastern region of Saudi Arabia.',
-            'WiDS at KFUPM workshop is an independent event that is organized by the WiDS@Dhahran team led by Ambassadors, Mrs. Asma Yamani and Raghad Alzahrani, as part of the annual WiDS Worldwide conference organized by Stanford University and an estimated 200+ locations worldwide, which features outstanding women doing outstanding work in the field of data science. All genders are invited to attend all WiDS Worldwide conference events',
-            'The forth annual WiDS @ Dhahran - KFUPM event will take place on May 4, 2023 in a hybrid format at KFUPM.This event will feature several professional and student female speakers.',
+            'King Fahad University of Petroleum and Minerals is pleased to host Global Women in Data Science conference for the sixth time in the Eastern region of Saudi Arabia.',
+            'WiDS at KFUPM workshop is an independent event that is organized by the WiDS@Dhahran team led by Ambassadors, Mrs. Asma Yamani, Aisha Alansari, and Shaikhah Laradhi, as part of the annual WiDS Worldwide conference organized by Stanford University and an estimated 200+ locations worldwide, which features outstanding women doing outstanding work in the field of data science. All genders are invited to attend all WiDS Worldwide conference events',
+            'The sixth annual WiDS @ Dhahran - KFUPM event will take place on May 1, 2025 in a hybrid format at KFUPM.This event will feature several professional and student female speakers.',
           ]}
         />
         <Workshops
