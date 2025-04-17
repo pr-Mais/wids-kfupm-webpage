@@ -53,11 +53,11 @@ export default function Home() {
           sectionTitle="WiDS-Dhahran @KFUPM 2025 Team"
           members={teamMembers}
         />
+        <WhyJoin />
         <TeamSection
           sectionTitle="WiDS-Dhahran @KFUPM Founding Team"
           members={foundingTeamMembers as TeamMember[]}
         />
-        <WhyJoin />
         <PartnersSection organizers={partners as Partner[]} />
         <ContactSection />
         <Footer />
