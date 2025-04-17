@@ -49,7 +49,7 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
   return (
     <section id="schedule" className="py-12 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-emerald-700 mb-6 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-teal-700 mb-6 text-center">
           Event Schedule
         </h2>
 
@@ -65,8 +65,8 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
           transition-colors duration-300 ease-in-out
           ${
             activeTab === tab.id
-              ? 'bg-emerald-600 text-white'
-              : 'bg-white text-gray-800 hover:bg-emerald-50 border border-gray-200'
+              ? 'bg-teal-600 text-white'
+              : 'bg-white text-gray-800 hover:bg-teal-50 border border-gray-200'
           }
           overflow-hidden
           group
@@ -78,7 +78,7 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
                 {/* Animated underline - your preferred effect */}
                 <div
                   className={`
-            absolute bottom-0 left-0 h-0.5 bg-emerald-500
+            absolute bottom-0 left-0 h-0.5 bg-teal-500
             transition-all duration-300 ease-in-out
             ${activeTab === tab.id ? 'w-full' : 'w-0 group-hover:w-full'}
           `}
@@ -96,8 +96,8 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
                     <div
                       className={`text-xs mt-1 ${
                         activeTab === tab.id
-                          ? 'text-emerald-100'
-                          : 'text-gray-600 group-hover:text-emerald-600'
+                          ? 'text-teal-100'
+                          : 'text-gray-600 group-hover:text-teal-600'
                       }`}
                     >
                       {tab.time}
@@ -117,13 +117,13 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
               className={`p-4 rounded-lg transition-all duration-200 ${
                 session.type === 'break'
                   ? 'bg-amber-50 hover:bg-amber-100'
-                  : 'bg-white hover:bg-emerald-50'
+                  : 'bg-white hover:bg-teal-50'
               } relative`}
             >
               {/* Vertical line separator */}
               <div
                 className={`absolute left-0 top-0 bottom-0 w-2 rounded-l-lg  ${
-                  session.type === 'break' ? 'bg-amber-300' : 'bg-emerald-300'
+                  session.type === 'break' ? 'bg-amber-300' : 'bg-teal-300'
                 }`}
               ></div>
 
@@ -133,7 +133,7 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
                   className={`w-full sm:w-24 flex-shrink-0 ${
                     session.type === 'break'
                       ? 'text-amber-700'
-                      : 'text-emerald-700'
+                      : 'text-teal-700'
                   }`}
                 >
                   <div className="flex items-center gap-2">

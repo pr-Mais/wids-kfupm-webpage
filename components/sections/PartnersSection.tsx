@@ -9,7 +9,7 @@ export const PartnersSection = ({ organizers }: PartnersProps) => {
   return (
     <section className="py-20 px-4 bg-gray-100">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-emerald-700 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-teal-700 mb-6">
           Co-organized by
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
@@ -25,9 +25,7 @@ export const PartnersSection = ({ organizers }: PartnersProps) => {
                 ${organizer.logoType === 'light' ? 'bg-[#161E26]' : 'bg-white'}
                 transition-colors duration-300
                 group-hover:${
-                  organizer.logoType === 'light'
-                    ? 'bg-[#1E2834]'
-                    : 'bg-emerald-50'
+                  organizer.logoType === 'light' ? 'bg-[#1E2834]' : 'bg-teal-50'
                 }
               `}
               />
@@ -53,7 +51,7 @@ export const PartnersSection = ({ organizers }: PartnersProps) => {
                     : 'border-gray-200'
                 }
                 transition-colors duration-300
-                group-hover:border-emerald-400
+                group-hover:border-teal-400
               `}
               />
             </div>

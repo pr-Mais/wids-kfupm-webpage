@@ -10,7 +10,6 @@ interface HeroProps {
   eventLocation: string;
   buttonText: string;
   targetDate: string; // ISO string in Riyadh time
-  logo?: React.ReactNode;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -20,7 +19,6 @@ const Hero: React.FC<HeroProps> = ({
   eventLocation,
   buttonText,
   targetDate,
-  logo,
 }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -82,29 +80,47 @@ const Hero: React.FC<HeroProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-800 to-green-700 text-white flex flex-col items-center justify-center p-6 text-center">
-      <div className="max-w-4xl space-y-8">
-        {logo}
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+      <div className="w-full max-w-6xl flex flex-row lg:justify-between justify-center items-center gap-4 md:gap-4 lg:gap-8 px-2 md:px-4 lg:px-8 mb-4 md:mb-6 lg:mb-16">
+        <img
+          src="./wids-logo.png"
+          alt="WiDS Logo"
+          className="max-w-[30%] h-auto"
+        />
+        <img
+          src="./kfupm-logo.png"
+          alt="KFUPM Logo"
+          className="max-w-[25%] h-auto"
+        />
+      </div>
 
-        <h1 className="text-4xl md:text-6xl font-bold tracking-wider mb-2">
+      <div className="max-w-4xl space-y-8">
+        <h1 className="text-4xl text-teal-700 md:text-6xl font-bold tracking-wider mb-2">
           {title}
         </h1>
 
-        <h2 className="text-2xl md:text-3xl font-light mb-6">{subtitle}</h2>
+        <h2 className="text-2xl text-teal-700 md:text-3xl font-light mb-6">
+          {subtitle}
+        </h2>
 
-        <div className="text-xl md:text-2xl mb-12 bg-green-800/30 p-4 rounded-lg backdrop-blur-sm">
+        <div className="text-xl md:text-2xl mb-12 bg-teal-500/30 p-4 rounded-lg backdrop-blur-sm">
           <p className="font-bold">{dateText}</p>
           <p>{eventLocation}</p>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-white text-green-700 hover:bg-green-50 font-bold py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl active:scale-95">
+          <a
+            href="https://events.kfupm.edu.sa/event/253/registrations/203/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white bg-teal-700 font-bold py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl active:scale-95"
+          >
             {buttonText}
-          </button>
+          </a>
 
           <button
             onClick={handleAddToCalendar}
-            className="border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl active:scale-95 flex items-center justify-center gap-2"
+            className="border-2 border-teal-700 hover:bg-white/10 font-bold text-teal-700 py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl active:scale-95 flex items-center justify-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -14,8 +14,8 @@ export const ContactSection = () => {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className='rounded-xl'
-             ></iframe>
+              className="rounded-xl"
+            ></iframe>
           </div>
 
           {/* Event Details */}
@@ -26,7 +26,7 @@ export const ContactSection = () => {
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="mt-1 text-emerald-600">
+                <div className="mt-1 text-teal-600">
                   <FaMapMarkerAlt className="text-lg" />
                 </div>
                 <div>
@@ -35,7 +35,7 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="mt-1 text-emerald-600">
+                <div className="mt-1 text-teal-600">
                   <FaPhone className="text-lg" />
                 </div>
                 <div>
@@ -44,7 +44,7 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="mt-1 text-emerald-600">
+                <div className="mt-1 text-teal-600">
                   <FaEnvelope className="text-lg" />
                 </div>
                 <div>
@@ -53,7 +53,7 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="mt-1 text-emerald-600">
+                <div className="mt-1 text-teal-600">
                   <FaLaptop className="text-lg" />
                 </div>
                 <div>

@@ -66,7 +66,7 @@ export const Countdown: React.FC<CountdownProps> = ({
       </div>
 
       {/* Mobile View - Single Box */}
-      <div className="md:hidden bg-white/20 p-4 rounded-lg backdrop-blur-md border border-white/10">
+      <div className="md:hidden bg-white/20 p-4 rounded-lg backdrop-blur-md border border-teal-500/10">
         <div className="flex justify-center items-center space-x-2">
           <CountdownSegment value={timeLeft.days} label="Days" />
           <div className="text-3xl">:</div>
@@ -85,7 +85,7 @@ const CountdownItem: React.FC<{ value: number; label: string }> = ({
   value,
   label,
 }) => (
-  <div className="bg-white/20 p-4 rounded-lg backdrop-blur-md border border-white/10 hover:bg-white/30 transition-all">
+  <div className="bg-teal-500/20 p-4 rounded-lg backdrop-blur-md border border-white/10 hover:bg-white/30 transition-all">
     <div className="text-4xl md:text-5xl font-bold">{value}</div>
     <div className="text-sm md:text-base opacity-80">{label}</div>
   </div>

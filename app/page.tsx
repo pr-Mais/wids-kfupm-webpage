@@ -29,18 +29,9 @@ export default function Home() {
           title="WOMEN IN DATA SCIENCE"
           subtitle="DHAHRAN @ KFUPM"
           dateText="1, May 2025 - 08:00 (UTC+3)"
-          eventLocation="KFUPM, Dhahran, Saudi Arabia"
+          eventLocation="KFUPM, Dhahran (Building 70 | Hybrid)"
           buttonText="JOIN NOW"
           targetDate="2025-05-01T08:00:00+03:00" // Riyadh time (UTC+3)
-          logo={
-            <Image
-              src="./wids-white.png"
-              alt="KFUPM Logo"
-              width={400}
-              height={80}
-              className="mb-8 mx-auto"
-            />
-          }
         />
         <About
           title="About WiDS Dhahran"

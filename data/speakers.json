@@ -1,24 +1,19 @@
 [
   {
-    "name": "Dr. Abdullah Sultan",
-    "title": "Dean",
-    "company": "KFUPM",
-    "linkedin": "",
-    "topic": "Opening"
-  },
-  {
     "name": "Dr. Fatima Abu Salam",
     "title": "Data Science Professor",
     "company": "American University of Beirut",
     "linkedin": "",
-    "topic": "Keynote 1: Safe, explainable, fair, and ethical decisions: insights from trustworthy ML"
+    "topic": "Keynote 1: Safe, explainable, fair, and ethical decisions: insights from trustworthy ML",
+    "image": "./photos/fatima_salem.jpg"
   },
   {
     "name": "Eng. Nourah Almulla",
     "title": "",
     "company": "Saudi Aramco",
     "linkedin": "",
-    "topic": "Keynote 2: Explainable AI in Petroleum Engineering"
+    "topic": "Keynote 2: Explainable AI in Petroleum Engineering",
+    "image": "./photos/nourah_almulla.jpg"
   },
   {
     "name": "Ms. Ruaa Abakar",
@@ -31,15 +26,17 @@
     "name": "Dr. Batool Almarzouq",
     "title": "",
     "company": "Allan Turing Institute",
-    "linkedin": "",
-    "topic": "Keynote 3: Responsible AI for science and medicine"
+    "linkedin": "https://www.linkedin.com/in/batool-almarzouq-093366a1/",
+    "topic": "Re-imagining data science roles, careers & skills: Lessons from the AI for Multiple Long-term Conditions (AIM) Community",
+    "image": "./photos/batool_almarzouq.png"
   },
   {
     "name": "Dr. Wadha Almattar",
     "title": "",
     "company": "Imam Abdulrahman University",
     "linkedin": "",
-    "topic": "Keynote 4: AI for Diabetic Retinopathy"
+    "topic": "Keynote 4: AI for Diabetic Retinopathy",
+    "image": "./photos/wadha_almattar.jpg"
   },
   {
     "name": "Dr. Xin liu",
@@ -53,7 +50,8 @@
     "title": "",
     "company": "Thya Technology",
     "linkedin": "",
-    "topic": "Keynote: Computer Vision Applications in Science and Engineering"
+    "topic": "Keynote: Computer Vision Applications in Science and Engineering",
+    "image": "./photos/justine_braguy.jpg"
   },
   {
     "name": "Ms. Afrah Shaahid",

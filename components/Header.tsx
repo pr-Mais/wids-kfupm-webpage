@@ -65,7 +65,7 @@ export const Header = () => {
                         className={`flex items-center gap-1 text-lg font-medium transition-all duration-200 ${
                           isScrolled
                             ? 'text-gray-800 hover:text-gray-600'
-                            : 'text-white hover:text-gray-200'
+                            : 'hover:text-gray-200'
                         }`}
                       >
                         {item.label}
@@ -100,7 +100,7 @@ export const Header = () => {
                     <div
                       onClick={() => scrollTo(item.id)}
                       className={`text-lg font-medium cursor-pointer transition-all duration-200 hover:scale-110 ${
-                        isScrolled ? 'text-gray-800' : 'text-white'
+                        isScrolled ? 'text-gray-800' : ''
                       }`}
                     >
                       {item.label}
@@ -116,7 +116,7 @@ export const Header = () => {
             <div
               onClick={() => setMobileOpen(!mobileOpen)}
               className={`p-2 rounded-md cursor-pointer transition-all duration-200 ${
-                isScrolled ? 'text-gray-800' : 'text-white'
+                isScrolled ? 'text-gray-800' : ''
               }`}
             >
               {mobileOpen ? (
