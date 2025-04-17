@@ -1,18 +1,26 @@
 [
   {
-    "title":
-      "Computer Vision As a Service: Dataset Annotation and Model Building",
-    "speaker": "Join Justine Braggy, CEO of Thya Technology",
-    "description":
-      "Learn to generate your own specific AI-driven detection model to answer scientific questions. Bring your own image dataset to build a personalized detection model.",
-    "ctaLink": "/workshops/computer-vision"
+    "title": "Building AI Workflows with Firebase Genkit",
+    "speaker": "Join Mais Alheraki, a software engineer @ Thmanyah and PhD student @ KFUPM (ICS)",
+    "description": "",
+    "ctaLink": "https://forms.office.com/Pages/ResponsePage.aspx?id=iLC0KX3SKUG5-YY3tZ6ks0vplhHKUNBAkm7lw5rCc2xURVRDMjEzR0pBN01LOE9ZSFVEVVlHUkVCVi4u"
   },
   {
-    "title":
-      "UX in Data Science: Improving the User Experience with Data-Driven Insights",
-    "speaker": "Join Maha AlGhamdi, a software engineer at Aramco",
-    "description":
-      "Learn the basics of UX and how to improve products with data-driven insights. The session will close with a case study that used data to enhance user experience.",
-    "ctaLink": "/workshops/ux-data-science"
+    "title": "Research with Advanced LLM Techniques",
+    "speaker": "Join Abrar Alotaibi, a PhD candidate @ KFUPM (ICS)",
+    "description": "",
+    "ctaLink": "https://forms.office.com/Pages/ResponsePage.aspx?id=iLC0KX3SKUG5-YY3tZ6ks0vplhHKUNBAkm7lw5rCc2xUNUtXN1MxTUZaWFYyMjExOE9CVDdCVzA0Vi4u"
+  },
+  {
+    "title": "Generative AI in the oil and Gas Industry for Data Digitization ",
+    "speaker": "Join Rawan Alsubaie, a Data Scientist @ Halliburton",
+    "description": "",
+    "ctaLink": "https://forms.office.com/Pages/ResponsePage.aspx?id=iLC0KX3SKUG5-YY3tZ6ks0vplhHKUNBAkm7lw5rCc2xURVdVRllXVUNSOEExRjFHR0lCVkdVMkpSVC4u"
+  },
+  {
+    "title": "AI ethics principles and requirements",
+    "speaker": "Join Asma Yamani, a PhD candidate @ KFUPM (ICS)",
+    "description": "",
+    "ctaLink": "https://forms.office.com/Pages/ResponsePage.aspx?id=iLC0KX3SKUG5-YY3tZ6ks0vplhHKUNBAkm7lw5rCc2xUNVNIWEFHQTFGU1o1VVFVWjJQQjU3WVdLTS4u"
   }
 ]

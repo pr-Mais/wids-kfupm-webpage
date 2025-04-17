@@ -90,7 +90,7 @@
   },
   {
     "name": "Asma Yamani",
-    "title": "",
+    "title": "PhD Candidate @ KFUPM",
     "company": "KFUPM (ICS)",
     "linkedin": "",
     "topic": "AI ethics principles and requirements"
@@ -100,18 +100,19 @@
     "title": "Software Engineer & PhD Student",
     "company": "KFUPM (ICS) & Thmanyah",
     "linkedin": "https://linkedin.com/in/maisalheraki",
-    "topic": "Building AI Workflows with Firebase Genkit"
+    "topic": "Building AI Workflows with Firebase Genkit",
+    "image": "./photos/mais_alheraki.jpg"
   },
   {
     "name": "Abrar Alotaibi",
-    "title": "",
+    "title": "PhD Candidate @ KFUPM",
     "company": "KFUPM (ICS)",
     "linkedin": "",
     "topic": "Accelerating Engineering Research with Advanced LLM Techniques"
   },
   {
     "name": "Rawan Alsubaie",
-    "title": "",
+    "title": "Data Scientist",
     "company": "Halliburton",
     "linkedin": "",
     "topic": "Generative AI in the oil and Gas Industry for Data Digitization"
