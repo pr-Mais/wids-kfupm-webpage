@@ -11,9 +11,10 @@
   },
   {
     "time": "08:45 - 09:30 AM",
-    "title": "Keynote 1: Safe, explainable, fair, and ethical decisions: insights from trustworthy ML",
+    "title": "Re-imagining data science roles, careers & skills: Lessons from the AI for Multiple Long-term Conditions (AIM) Community",
     "session": "session1",
-    "speaker": "Dr. Fatima Abu Salam"
+    "speaker": "Dr. Batool Almarzouq",
+    "type": "session"
   },
   {
     "time": "09:30 - 10:00 AM",
