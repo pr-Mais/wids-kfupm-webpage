@@ -1,28 +1,5 @@
 [
   {
-    "name": "Dr. Fatima Abu Salam",
-    "title": "Data Science Professor",
-    "company": "American University of Beirut",
-    "linkedin": "",
-    "topic": "Keynote 1: Safe, explainable, fair, and ethical decisions: insights from trustworthy ML",
-    "image": "./photos/fatima_salem.jpg"
-  },
-  {
-    "name": "Eng. Nourah Almulla",
-    "title": "",
-    "company": "Saudi Aramco",
-    "linkedin": "",
-    "topic": "Keynote 2: Explainable AI in Petroleum Engineering",
-    "image": "./photos/nourah_almulla.jpg"
-  },
-  {
-    "name": "Ms. Ruaa Abakar",
-    "title": "",
-    "company": "",
-    "linkedin": "",
-    "topic": "Flash talk: AI for smoke point prediction"
-  },
-  {
     "name": "Dr. Batool Almarzouq",
     "title": "",
     "company": "Allan Turing Institute",
@@ -32,33 +9,56 @@
   },
   {
     "name": "Dr. Wadha Almattar",
-    "title": "",
+    "title": "Empowering Healthcare with AI: Insights and Research Directions ",
     "company": "Imam Abdulrahman University",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/wadha-m-almattar-phd-93b92a186/",
     "topic": "Keynote 4: AI for Diabetic Retinopathy",
     "image": "./photos/wadha_almattar.jpg"
   },
   {
+    "name": "Dr. Fatima Abu Salam",
+    "title": "Data Science Professor",
+    "company": "American University of Beirut",
+    "linkedin": "https://www.linkedin.com/in/fatima-abu-salem-3889849/",
+    "topic": "Safe, explainable, fair, and ethical decisions: insights from trustworthy ML",
+    "image": "./photos/fatima_salem.jpg"
+  },
+  {
+    "name": "Eng. Nourah Almulla",
+    "title": "",
+    "company": "Saudi Aramco",
+    "linkedin": "https://www.linkedin.com/in/nourah-almulla/",
+    "topic": "Explainable AI in Petroleum Engineering",
+    "image": "./photos/nourah_almulla.jpg"
+  },
+  {
     "name": "Dr. Xin liu",
-    "title": "Flash Talk: Predicting Dunham Texture and Depositional Facies of Carbonate Reservoirs from Thin Sections",
+    "title": "Deep Learning Applications in Geoscience Image Processing",
     "company": "KFUPM",
     "linkedin": "",
     "topic": ""
   },
   {
+    "name": "Ms. Ruaa Abakar",
+    "title": "",
+    "company": "",
+    "linkedin": "",
+    "topic": "Flash talk: AI for smoke point prediction"
+  },
+  {
     "name": "Dr. Justine Braguy",
     "title": "",
     "company": "Thya Technology",
-    "linkedin": "",
-    "topic": "Keynote: Computer Vision Applications in Science and Engineering",
+    "linkedin": "https://www.linkedin.com/in/justinebraguy/",
+    "topic": "Accelerating Research with Computer Vision",
     "image": "./photos/justine_braguy.jpg"
   },
   {
     "name": "Ms. Eman Mahmoud",
     "title": "",
     "company": "KFUPM",
-    "linkedin": "",
-    "topic": "Flash Talk: Smart air pollution mapping"
+    "linkedin": "https://www.linkedin.com/in/eman-mahmoud-8384a5111/",
+    "topic": "Smart Air Pollution Mapping"
   },
   {
     "name": "Reema Alsaif",
@@ -82,24 +82,38 @@
     "topic": "Panel discussion: AI in Engineering and Science: Ann industry prospective"
   },
   {
+    "name": "Linah Abuhajar",
+    "title": "",
+    "company": "KFUPM (ICS)",
+    "linkedin": "",
+    "topic": "Panel discussion: AI in Engineering and Science: Ann industry prospective"
+  },
+  {
     "name": "Asma Yamani",
     "title": "",
-    "company": "KFUPM",
+    "company": "KFUPM (ICS)",
     "linkedin": "",
-    "topic": "Closing and award announcement"
+    "topic": "AI ethics principles and requirements"
   },
   {
-    "name": "",
-    "title": "",
-    "company": "",
-    "linkedin": "",
-    "topic": "Workshop 1"
+    "name": "Mais Alheraki",
+    "title": "Software Engineer & PhD Student",
+    "company": "KFUPM (ICS) & Thmanyah",
+    "linkedin": "https://linkedin.com/in/maisalheraki",
+    "topic": "Building AI Workflows with Firebase Genkit"
   },
   {
-    "name": "",
+    "name": "Abrar Alotaibi",
     "title": "",
-    "company": "",
+    "company": "KFUPM (ICS)",
     "linkedin": "",
-    "topic": "Workshop 2"
+    "topic": "Accelerating Engineering Research with Advanced LLM Techniques"
+  },
+  {
+    "name": "Rawan Alsubaie",
+    "title": "",
+    "company": "Halliburton",
+    "linkedin": "",
+    "topic": "Generative AI in the oil and Gas Industry for Data Digitization"
   }
 ]
