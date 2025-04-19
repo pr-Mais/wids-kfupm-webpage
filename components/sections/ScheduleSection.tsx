@@ -22,22 +22,22 @@ export const Schedule = ({ sessions }: ScheduleProps) => {
     {
       id: 'session1',
       label: 'Session 1',
-      time: '09:30 - 10:15 AM',
+      time: '09:00 - 11:05 AM',
     },
     {
       id: 'session2',
       label: 'Session 2',
-      time: '10:15 - 12:00 PM',
+      time: '11:05 - 01:00 PM',
     },
     {
       id: 'session3',
       label: 'Session 3',
-      time: '12:00 - 01:07 PM',
+      time: '01:10 - 03:00 PM',
     },
     {
       id: 'parallel',
       label: 'Parallel Sessions',
-      time: '03:00 - 04:00 PM',
+      time: '03:00 - 04:30 PM',
     },
   ];
 

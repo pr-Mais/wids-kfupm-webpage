@@ -24,7 +24,7 @@ export const TeamSection = ({ members, sectionTitle: title }: TeamProps) => {
         </h2>
         <div className="h-1 w-16 bg-teal-600 mb-8"></div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
           {members.map((member, index) => (
             <div
               key={index}
