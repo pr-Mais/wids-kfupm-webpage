@@ -5,60 +5,60 @@
     "session": "opening"
   },
   {
-    "time": "08:40 - 08:55 AM",
+    "time": "09:00 - 09:20 AM",
     "title": "Opening",
     "session": "opening"
   },
   {
-    "time": "09:00 - 09:45 AM",
+    "time": "09:20 - 10:10 AM",
     "title": "Keynote 1: Re-imagining data science roles, careers & skills: Lessons from the AI for Multiple Long-term Conditions (AIM) Community",
     "session": "session1",
     "speaker": "Dr. Batool Almarzouq",
     "type": "session"
   },
   {
-    "time": "09:45 - 10:15 AM",
+    "time": "10:10 - 10:40 AM",
     "title": "Keynote 2: Empowering Healthcare with AI: Insights and Research Directions ",
     "session": "session1",
     "speaker": "Dr. Wadha Almattar",
     "type": "session"
   },
   {
-    "time": "10:15 - 10:35 AM",
+    "time": "10:30 - 10:45 AM",
     "title": "Coffee break",
     "session": "session1",
     "type": "break"
   },
   {
-    "time": "10:35 - 11:05 AM",
+    "time": "10:45 - 11:15 AM",
     "title": "Keynote 3: Safe, explainable, fair, and ethical decisions: insights from trustworthy ML",
     "session": "session1",
     "speaker": "Dr. Fatima Abu Salam",
     "type": "session"
   },
   {
-    "time": "11:05 - 11:35 AM",
+    "time": "11:15 - 11:45 AM",
     "title": "Keynote 4: Explainable AI in Petroleum Engineering",
     "session": "session2",
     "speaker": "Eng. Nourah Almulla",
     "type": "session"
   },
   {
-    "time": "11:35 - 11:50 AM",
+    "time": "11:45 - 12:00 PM",
     "title": "Talk: Deep Learning Applications in Geoscience Image Processing",
     "session": "session2",
     "speaker": "Dr. Xin liu",
     "type": "session"
   },
   {
-    "time": "11:50 - 12:00 PM",
+    "time": "12:00 - 12:10 PM",
     "title": "Flash talk: AI for smoke point prediction",
     "session": "session2",
     "speaker": "Ms. Ruaa Abakar",
-    "type": "break"
+    "type": "sessions"
   },
   {
-    "time": "12:00 - 01:00 PM",
+    "time": "12:10 - 01:10 PM",
     "title": "Lunch break, Prayer break, Poster session",
     "session": "session2",
     "type": "break"
@@ -71,28 +71,27 @@
     "type": "session"
   },
   {
-    "time": "01:50 - 02:00 PM",
-    "title": "Flash Talk: Smart Air Pollution Mapping",
-    "session": "session3",
-    "speaker": "Ms. Eman Mahmoud",
-    "type": "session"
-  },
-  {
-    "time": "02:00 - 02:40 PM",
-    "title": "Panel discussion: Projects, Strategy, and National Support",
+    "time": "01:40 - 02:20 PM",
+    "title": "Panel discussion: AI in Engineering and Science: an Industry Prospective",
     "session": "session3",
     "speaker": "Reema Alsaif • Itsikiantsoa Randrianantenaina • Aeshah Almutairy • Linah Abuhajar",
     "type": "session"
   },
   {
-    "time": "02:40 - 03:00 PM",
+    "time": "02:20 - 03:10 PM",
     "title": "Closing and award announcement",
     "session": "session3",
     "speaker": "Asma Yamani",
     "type": "session"
   },
   {
-    "time": "03:00 - 04:30 PM",
+    "time": "03:10 - 03:15 PM",
+    "title": "Break",
+    "session": "session2",
+    "type": "break"
+  },
+  {
+    "time": "03:15 - 04:30 PM",
     "title": "Building AI Workflows with Firebase Genkit",
     "session": "parallel",
     "speaker": "Mais Alheraki",
